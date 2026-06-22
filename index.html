@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patrick D Williams Estate Planners | Will Writing & Estate Planning across London & UK</title>
+  <meta name="description" content="Estate planning for families across London, Birmingham, Nottingham, Manchester, Bristol, Leeds. Professional Will writing, Lasting Powers of Attorney, trusts and asset protection." />
+  <link rel="canonical" href="https://patrickwilliamsestateplanners.co.uk/" />
+  <!-- Bootstrap 5 + Icons + Google Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ----------------------------------------------
+       GLOBAL STYLES
+    ------------------------------------------------ */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #faf8f5;
+      color: #1e2b37;
+      scroll-behavior: smooth;
+    }
+    h1, h2, h3, h4, .font-serif { font-family: 'Playfair Display', serif; }
+
+    /* brand colours */
+    .bg-navy { background: #0a2540; }
+    .text-navy { color: #0a2540; }
+    .btn-gold {
+      background: #d4af37;
+      color: #0a2540;
+      font-weight: 600;
+      border: none;
+      transition: all 0.3s ease;
+    }
+    .btn-gold:hover {
+      background: #c2a12e;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      color: #0a2540;
+    }
+    .btn-outline-navy {
+      border: 1.5px solid #0a2540;
+      color: #0a2540;
+      background: transparent;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .btn-outline-navy:hover {
+      background: #0a2540;
+      color: white;
+    }
+    .section-title {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 2rem;
+      font-weight: 700;
+    }
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: #d4af37;
+    }
+    .card-hover {
+      transition: all 0.25s ease;
+      border: none;
+      border-radius: 20px;
+      background: white;
+    }
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1);
+    }
+    .bg-soft-gold { background: #fdf6e8; }
+    .phone-header {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #0a2540;
+      text-decoration: none;
+    }
+    .phone-header i { color: #d4af37; margin-right: 6px; }
+    .navbar-brand { font-family: 'Playfair Display', serif; font-weight: 700; }
+    .nav-link-custom {
+      color: #0a2540;
+      font-weight: 500;
+      transition: 0.2s;
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+    }
+    .nav-link-custom:hover { color: #d4af37 !important; background: rgba(212,175,55,0.05); }
+    .nav-link-custom.active-link { color: #b38f2a !important; background: rgba(212,175,55,0.1); font-weight: 600; }
+    .hero-badge {
+      background: rgba(10,37,64,0.06);
+      border-radius: 50px;
+      padding: 0.3rem 1.2rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      width: fit-content;
+    }
+    .price-box {
+      background: white;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+      border-left: 4px solid #d4af37;
+    }
+    .footer a { text-decoration: none; transition: 0.2s; }
+    .footer a:hover { color: #d4af37 !important; }
+    /* make phone number prominent in header */
+    .header-phone {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #0a2540;
+    }
+    .header-phone i { color: #d4af37; margin-right: 8px; }
+    @media (max-width: 768px) {
+      .header-phone { font-size: 1rem; }
+    }
+    /* profile image placeholder */
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #d4af37;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      color: white;
+      margin: 0 auto;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+    .service-icon { font-size: 2.5rem; color: #d4af37; }
+  </style>
+</head>
+<body>
+
+<!-- =============================================
+     HEADER WITH PHONE NUMBER (visible on every page)
+     ============================================= -->
+<header class="bg-white border-bottom py-2">
+  <div class="container d-flex justify-content-between align-items-center">
+    <span class="fw-bold text-navy"><i class="bi bi-telephone-fill me-1" style="color:#d4af37;"></i> <a href="tel:07432604830" class="text-navy text-decoration-none header-phone">0743 260 4830</a></span>
+    <span class="small text-secondary d-none d-sm-inline">Free 15-min consultation</span>
+  </div>
+</header>
+
+<!-- =============================================
+     NAVIGATION (sticky)
+     ============================================= -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-2">
+  <div class="container">
+    <a class="navbar-brand fs-3" href="#home">Patrick D Williams <span style="color:#d4af37;">Estate Planners</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-1" id="navMenu">
+        <li class="nav-item"><a class="nav-link-custom" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link-custom" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link-custom" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link-custom" href="#pricing">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link-custom" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- =============================================
+     HOME – clear headline, no hero image overlay
+     ============================================= -->
+<section id="home" class="py-5 mt-2">
+  <div class="container py-4">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-8">
+        <div class="hero-badge mb-3"><i class="bi bi-shield-check me-1" style="color:#d4af37;"></i> Trusted estate planning since 2025</div>
+        <h1 class="display-3 fw-bold mb-3">Estate planning for families across London &amp; the UK</h1>
+        <p class="lead mb-4" style="font-size:1.3rem;">Clear, straightforward Will writing, Lasting Powers of Attorney, trusts and asset protection. No jargon, just honest advice from someone who cares about your family&#39;s future.</p>
+        <div class="d-flex flex-wrap gap-3 mb-4">
+          <a href="#contact" class="btn btn-gold px-4 py-2 rounded-pill"><i class="bi bi-calendar3 me-2"></i>Book a meeting</a>
+          <a href="#pricing" class="btn btn-outline-navy px-4 py-2 rounded-pill"><i class="bi bi-tag me-2"></i>See prices</a>
+          <a href="#services" class="btn btn-outline-navy px-4 py-2 rounded-pill"><i class="bi bi-file-earmark-text me-2"></i>Learn about Wills</a>
+        </div>
+        <div class="d-flex gap-3 flex-wrap text-secondary">
+          <span><i class="bi bi-check-circle-fill me-1" style="color:#d4af37;"></i> Free 15-min call</span>
+          <span><i class="bi bi-check-circle-fill me-1" style="color:#d4af37;"></i> Fixed fees</span>
+          <span><i class="bi bi-check-circle-fill me-1" style="color:#d4af37;"></i> Home visits available</span>
+        </div>
+      </div>
+      <div class="col-lg-4 text-center">
+        <div class="bg-soft-gold p-4 rounded-4 shadow-sm">
+          <i class="bi bi-house-heart display-1" style="color:#d4af37;"></i>
+          <p class="mt-2 fw-bold">Protecting families across<br>London, Birmingham, Nottingham, Manchester, Bristol, and Leeds.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     ABOUT – face + story
+     ============================================= -->
+<section id="about" class="py-5 bg-white">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-md-5 text-center">
+        <div class="profile-img mx-auto">
+          <i class="bi bi-person-circle" style="font-size: 5rem; color: #0a2540;"></i>
+        </div>
+        <p class="mt-3 fst-italic text-secondary">Patrick Williams – Estate Planner</p>
+      </div>
+      <div class="col-md-7">
+        <h2 class="section-title fs-1 fw-bold">About Patrick</h2>
+        <p class="fs-5">I started Patrick D Williams Estate Planners because I saw too many families left with uncertainty and unnecessary stress after a loved one passed away. I wanted to make estate planning straightforward, affordable, and human.</p>
+        <p>With over 20 years of experience in accountancy and financial planning, I understand the importance of getting the details right. But more than that, I know that talking about Wills and Powers of Attorney isn&#39;t easy. I take time to listen, explain everything in plain English, and make sure you feel confident about the decisions you make.</p>
+        <p><strong>I cover London, Birmingham, Nottingham, Manchester, Bristol, and Leeds – and I offer home visits if that&#39;s easier for you.</strong></p>
+        <a href="#contact" class="btn btn-gold rounded-pill px-4 mt-2"><i class="bi bi-person-plus me-2"></i>Let&#39;s have a chat</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     SERVICES – with clear prices
+     ============================================= -->
+<section id="services" class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title fs-1 fw-bold">Our Services</h2>
+      <p class="text-secondary">Straightforward services with fixed fees – no surprises.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card-hover card p-4 h-100 shadow-sm rounded-4">
+          <div class="card-body text-center">
+            <i class="bi bi-file-earmark-text service-icon"></i>
+            <h4 class="fw-bold mt-3">Will Writing</h4>
+            <p>A professionally drafted Will that clearly sets out your wishes. Includes advice on guardians for children and inheritance tax planning.</p>
+            <p class="fw-bold text-navy">£295 + VAT (single) <br>£495 + VAT (mirror Wills for couples)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card-hover card p-4 h-100 shadow-sm rounded-4">
+          <div class="card-body text-center">
+            <i class="bi bi-person-arms-up service-icon"></i>
+            <h4 class="fw-bold mt-3">Lasting Power of Attorney</h4>
+            <p>Health &amp; welfare and property &amp; financial affairs LPAs. We handle the registration with the Office of the Public Guardian.</p>
+            <p class="fw-bold text-navy">£395 + VAT (single LPA) <br>£695 + VAT (both LPAs)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card-hover card p-4 h-100 shadow-sm rounded-4">
+          <div class="card-body text-center">
+            <i class="bi bi-shield-lock service-icon"></i>
+            <h4 class="fw-bold mt-3">Trusts &amp; Asset Protection</h4>
+            <p>Trusts to protect your home, savings and investments from care fees and inheritance tax. Bespoke advice tailored to your situation.</p>
+            <p class="fw-bold text-navy">From £795 + VAT (depending on complexity)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card-hover card p-4 h-100 shadow-sm rounded-4">
+          <div class="card-body text-center">
+            <i class="bi bi-archive service-icon"></i>
+            <h4 class="fw-bold mt-3">Executor Service</h4>
+            <p>We can act as professional executor of your Will, taking the burden off your family during a difficult time. Includes full estate administration.</p>
+            <p class="fw-bold text-navy">From £1,200 + VAT (depending on estate size)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <p class="text-secondary"><i class="bi bi-info-circle me-1"></i> All fees include initial consultation, drafting, and final signing. Home visits available at no extra cost.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     PRICING – full price list
+     ============================================= -->
+<section id="pricing" class="py-5 bg-white">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title fs-1 fw-bold">Our Fees</h2>
+      <p class="text-secondary">No hidden costs – what you see is what you pay.</p>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="price-box h-100">
+          <h4 class="fw-bold">Single Will</h4>
+          <p class="display-6 fw-bold text-navy">£295</p>
+          <p class="text-secondary">+ VAT</p>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Full consultation</li>
+            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Drafting &amp; signing</li>
+            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Storage advice</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="price-box h-100 border-gold" style="border-left-color: #d4af37; border-width: 4px;">
+          <h4 class="fw-bold">Mirror Wills (couple)</h4>
+          <p class="display-6 fw-bold text-navy">£495</p>
+          <p class="text-secondary">+ VAT</p>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Two matching Wills</li>
+            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Joint consultation</li>
+            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Inheritance tax planning</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="price-box h-100">
+          <h4 class="fw-bold">Lasting Power of Attorney</h4>
+          <p class="display-6 fw-bold text-navy">£395</p>
+          <p class="text-secondary">per LPA (+ VAT) <br>£695 for both</p>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> OPG registration included</li>
+            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Health &amp; welfare or financial</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="price-box h-100">
+          <h4 class="fw-bold">Trust &amp; Asset Protection</h4>
+          <p class="display-6 fw-bold text-navy">From £795</p>
+          <p class="text-secondary">+ VAT</p>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Bespoke trust drafting</li>
+            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Care fee protection advice</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="price-box h-100">
+          <h4 class="fw-bold">Executor Service</h4>
+          <p class="display-6 fw-bold text-navy">From £1,200</p>
+          <p class="text-secondary">+ VAT</p>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Professional executor</li>
+            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Full estate administration</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="price-box h-100 bg-soft-gold">
+          <h4 class="fw-bold">Free 15-min Call</h4>
+          <p class="display-6 fw-bold text-navy">£0</p>
+          <p class="text-secondary">No obligation</p>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Ask any questions</li>
+            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Get a feel for how we work</li>
+          </ul>
+          <a href="#contact" class="btn btn-gold rounded-pill mt-2 w-100">Book now</a>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-secondary mt-4"><i class="bi bi-credit-card me-1"></i> Payment by bank transfer or card. Home visits available across London, Birmingham, Nottingham, Manchester, Bristol, and Leeds.</p>
+  </div>
+</section>
+
+<!-- =============================================
+     CONTACT – with Calendly link, phone, email
+     ============================================= -->
+<section id="contact" class="py-5 bg-navy text-white">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6">
+        <h2 class="display-4 fw-bold">Let&#39;s talk about your future</h2>
+        <p class="lead mt-3 opacity-75">A free 15-minute phone call – no pressure, just honest advice. We&#39;ll work out what you need and how we can help.</p>
+        <div class="mt-4 d-flex flex-column gap-3">
+          <div><i class="bi bi-telephone-fill me-3 fs-5" style="color:#d4af37;"></i> <strong>0743 260 4830</strong></div>
+          <div><i class="bi bi-envelope-fill me-3 fs-5" style="color:#d4af37;"></i> patrick@estateplanners.co.uk</div>
+          <div><i class="bi bi-geo-alt-fill me-3 fs-5" style="color:#d4af37;"></i> London, Birmingham, Nottingham, Manchester, Bristol, and Leeds</div>
+        </div>
+        <div class="mt-4">
+          <a href="https://calendly.com/patrickwilliams" target="_blank" class="btn btn-gold rounded-pill px-5 py-3 fs-5"><i class="bi bi-calendar-check me-2"></i>Book a free 15-min call</a>
+        </div>
+        <p class="mt-3 small opacity-75">Or call us directly – we&#39;re here Monday–Friday, 9am–6pm.</p>
+      </div>
+      <div class="col-lg-6">
+        <div class="bg-white text-dark p-4 rounded-4 shadow">
+          <h4 class="fw-bold mb-3">Send a message</h4>
+          <form id="contactForm" action="https://formsubmit.co/patrick@estateplanners.co.uk" method="POST" onsubmit="return validateBot(event)">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New enquiry from Estate Planners website">
+            <div class="mb-3"><input type="text" class="form-control" name="name" placeholder="Your name" required></div>
+            <div class="mb-3"><input type="email" class="form-control" name="email" placeholder="Email address" required></div>
+            <div class="mb-3"><input type="tel" class="form-control" name="phone" placeholder="Phone number"></div>
+            <div class="mb-3"><textarea class="form-control" name="message" rows="3" placeholder="Tell me about your situation..." required></textarea></div>
+            <button type="submit" class="btn btn-gold w-100 rounded-pill py-2 fw-semibold">Send message <i class="bi bi-send"></i></button>
+            <div id="formFeedback" class="mt-3 small text-center text-dark"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     FOOTER – sitemap link, areas served
+     ============================================= -->
+<footer class="py-4 bg-white border-top">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-md-6">
+        <p class="mb-0 small text-secondary">© 2026 Patrick D Williams Estate Planners. All rights reserved.<br>
+        <span class="text-muted">Protecting families across London, Birmingham, Nottingham, Manchester, Bristol, and Leeds.</span></p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <a href="/sitemap.xml" class="text-secondary text-decoration-none small me-3">Sitemap</a>
+        <a href="#home" class="text-secondary text-decoration-none small">Back to top <i class="bi bi-arrow-up"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // =============================================
+  // NAVIGATION ACTIVE STATE
+  // =============================================
+  const navLinks = document.querySelectorAll('.nav-link-custom');
+  const sections = ['home','about','services','pricing','contact'];
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      navLinks.forEach(l => l.classList.remove('active-link'));
+      this.classList.add('active-link');
+      const id = this.getAttribute('href');
+      if (id && id !== "#") {
+        e.preventDefault();
+        document.querySelector(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+  window.addEventListener('scroll', () => {
+    let current = '';
+    for (let s of sections) {
+      const el = document.getElementById(s);
+      if (el) {
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= 150 && rect.bottom >= 80) { current = s; break; }
+      }
+    }
+    navLinks.forEach(link => {
+      link.classList.remove('active-link');
+      if (link.getAttribute('href')?.substring(1) === current) link.classList.add('active-link');
+    });
+  });
+
+  // =============================================
+  // BOT DETECTION (honeypot)
+  // =============================================
+  function validateBot(e) {
+    const honey = document.querySelector('input[name="_honey"]');
+    if (honey && honey.value !== "") {
+      e.preventDefault();
+      document.getElementById('formFeedback').innerHTML = '<div class="alert alert-danger">Bot detected. Submission blocked.</div>';
+      return false;
+    }
+    return true;
+  }
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      if (!validateBot(e)) e.preventDefault();
+    });
+  }
+
+  // =============================================
+  // SITEMAP GENERATOR (simple static)
+  // =============================================
+  // This is a placeholder – you'll need to host an actual sitemap.xml.
+  // For now, we'll just show a console log.
+  console.log('Sitemap available at /sitemap.xml (static file)');
+</script>
+
+<!-- =============================================
+     STATIC SITEMAP.XML (inline – but should be a separate file)
+     ============================================= -->
+<!--
+  For production, create a file named sitemap.xml in the root folder with:
+  <?xml version="1.0" encoding="UTF-8"?>
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url><loc>https://patrickwilliamsestateplanners.co.uk/</loc><priority>1.0</priority></url>
+    <url><loc>https://patrickwilliamsestateplanners.co.uk/#about</loc></url>
+    <url><loc>https://patrickwilliamsestateplanners.co.uk/#services</loc></url>
+    <url><loc>https://patrickwilliamsestateplanners.co.uk/#pricing</loc></url>
+    <url><loc>https://patrickwilliamsestateplanners.co.uk/#contact</loc></url>
+  </urlset>
+-->
+</body>
+</html>
