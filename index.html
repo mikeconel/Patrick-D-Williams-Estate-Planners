@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Patrick D Williams Estate Planners | Will Writing & Estate Planning across London & UK</title>
+  <title>Patrick D Williams Estate Planners | Home</title>
   <meta name="description" content="Estate planning for families across London, Birmingham, Nottingham, Manchester, Bristol, Leeds. Professional Will writing, Lasting Powers of Attorney, trusts and asset protection." />
   <link rel="canonical" href="https://patrickwilliamsestateplanners.co.uk/" />
   <!-- Bootstrap 5 + Icons + Google Fonts -->
@@ -11,9 +11,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
-    /* ----------------------------------------------
-       GLOBAL STYLES
-    ------------------------------------------------ */
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Inter', sans-serif;
@@ -22,8 +19,6 @@
       scroll-behavior: smooth;
     }
     h1, h2, h3, h4, .font-serif { font-family: 'Playfair Display', serif; }
-
-    /* brand colours */
     .bg-navy { background: #0a2540; }
     .text-navy { color: #0a2540; }
     .btn-gold {
@@ -110,7 +105,6 @@
     }
     .footer a { text-decoration: none; transition: 0.2s; }
     .footer a:hover { color: #d4af37 !important; }
-    /* make phone number prominent in header */
     .header-phone {
       font-size: 1.2rem;
       font-weight: 600;
@@ -120,10 +114,9 @@
     @media (max-width: 768px) {
       .header-phone { font-size: 1rem; }
     }
-    /* profile image placeholder */
     .profile-img {
-      width: 180px;
-      height: 180px;
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
       object-fit: cover;
       background: #d4af37;
@@ -135,14 +128,89 @@
       margin: 0 auto;
       box-shadow: 0 15px 30px rgba(0,0,0,0.1);
     }
+    .profile-img img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
     .service-icon { font-size: 2.5rem; color: #d4af37; }
+    .dropdown-menu-custom {
+      border: none;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+      padding: 0.5rem;
+      background: white;
+    }
+    .dropdown-menu-custom .dropdown-item {
+      border-radius: 12px;
+      padding: 0.6rem 1.2rem;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+    .dropdown-menu-custom .dropdown-item:hover {
+      background: #fdf6e8;
+      color: #d4af37;
+    }
+    .bottom-navbar {
+      background: #0a2540;
+      padding: 1rem 0;
+      border-top: 2px solid #d4af37;
+    }
+    .bottom-navbar a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: 0.2s;
+      padding: 0.3rem 0.8rem;
+    }
+    .bottom-navbar a:hover { color: #d4af37; }
+    .bottom-navbar .bi { margin-right: 4px; }
+    .service-hero-img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    }
+    @media (max-width: 768px) {
+      .service-hero-img { height: 180px; }
+    }
+    .milestone-dot {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #d4af37;
+      border: 3px solid white;
+      box-shadow: 0 0 0 2px #d4af37;
+      flex-shrink: 0;
+      margin-top: 4px;
+    }
+    .milestone-item {
+      position: relative;
+      padding-left: 32px;
+      padding-bottom: 2rem;
+      border-left: 2px solid rgba(212,175,55,0.2);
+    }
+    .milestone-item:last-child { padding-bottom: 0; border-left: none; }
+    .milestone-item .milestone-dot {
+      position: absolute;
+      left: -8px;
+      top: 4px;
+    }
+    .service-card-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 16px 16px 0 0;
+    }
+    .service-card {
+      transition: all 0.3s ease;
+      border: none;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .service-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
   </style>
 </head>
 <body>
 
-<!-- =============================================
-     HEADER WITH PHONE NUMBER (visible on every page)
-     ============================================= -->
+<!-- HEADER WITH PHONE -->
 <header class="bg-white border-bottom py-2">
   <div class="container d-flex justify-content-between align-items-center">
     <span class="fw-bold text-navy"><i class="bi bi-telephone-fill me-1" style="color:#d4af37;"></i> <a href="tel:07432604830" class="text-navy text-decoration-none header-phone">0743 260 4830</a></span>
@@ -150,30 +218,37 @@
   </div>
 </header>
 
-<!-- =============================================
-     NAVIGATION (sticky)
-     ============================================= -->
+<!-- NAVIGATION -->
 <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-2">
   <div class="container">
-    <a class="navbar-brand fs-3" href="#home">Patrick D Williams <span style="color:#d4af37;">Estate Planners</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand fs-3" href="index.html">Patrick D Williams <span style="color:#d4af37;">Estate Planners</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarMain">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-1" id="navMenu">
-        <li class="nav-item"><a class="nav-link-custom" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link-custom" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link-custom" href="#services">Services</a></li>
-        <li class="nav-item"><a class="nav-link-custom" href="#pricing">Pricing</a></li>
-        <li class="nav-item"><a class="nav-link-custom" href="#contact">Contact</a></li>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-1">
+        <li class="nav-item"><a class="nav-link-custom active-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link-custom" href="about.html">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link-custom dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+          <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="will-writing.html">Will Writing</a></li>
+            <li><a class="dropdown-item" href="lasting-powers-of-attorney.html">Lasting Powers of Attorney</a></li>
+            <li><a class="dropdown-item" href="property-protection-trust.html">Property Protection Trust</a></li>
+            <li><a class="dropdown-item" href="discretionary-trust.html">Discretionary Trust</a></li>
+            <li><a class="dropdown-item" href="bare-trust.html">Bare Trust</a></li>
+            <li><a class="dropdown-item" href="joint-tenancy-severance.html">Joint Tenancy Severance</a></li>
+            <li><a class="dropdown-item" href="executor-package.html">Executor Package</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link-custom" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link-custom" href="contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- =============================================
-     HOME – clear headline, no hero image overlay
-     ============================================= -->
+<!-- HOME HERO -->
 <section id="home" class="py-5 mt-2">
   <div class="container py-4">
     <div class="row align-items-center g-5">
@@ -182,9 +257,9 @@
         <h1 class="display-3 fw-bold mb-3">Estate planning for families across London &amp; the UK</h1>
         <p class="lead mb-4" style="font-size:1.3rem;">Clear, straightforward Will writing, Lasting Powers of Attorney, trusts and asset protection. No jargon, just honest advice from someone who cares about your family&#39;s future.</p>
         <div class="d-flex flex-wrap gap-3 mb-4">
-          <a href="#contact" class="btn btn-gold px-4 py-2 rounded-pill"><i class="bi bi-calendar3 me-2"></i>Book a meeting</a>
-          <a href="#pricing" class="btn btn-outline-navy px-4 py-2 rounded-pill"><i class="bi bi-tag me-2"></i>See prices</a>
-          <a href="#services" class="btn btn-outline-navy px-4 py-2 rounded-pill"><i class="bi bi-file-earmark-text me-2"></i>Learn about Wills</a>
+          <a href="contact.html" class="btn btn-gold px-4 py-2 rounded-pill"><i class="bi bi-calendar3 me-2"></i>Book a meeting</a>
+          <a href="pricing.html" class="btn btn-outline-navy px-4 py-2 rounded-pill"><i class="bi bi-tag me-2"></i>See prices</a>
+          <a href="will-writing.html" class="btn btn-outline-navy px-4 py-2 rounded-pill"><i class="bi bi-file-earmark-text me-2"></i>Learn about Wills</a>
         </div>
         <div class="d-flex gap-3 flex-wrap text-secondary">
           <span><i class="bi bi-check-circle-fill me-1" style="color:#d4af37;"></i> Free 15-min call</span>
@@ -202,212 +277,125 @@
   </div>
 </section>
 
-<!-- =============================================
-     ABOUT – face + story
-     ============================================= -->
-<section id="about" class="py-5 bg-white">
-  <div class="container">
-    <div class="row g-5 align-items-center">
-      <div class="col-md-5 text-center">
-        <div class="profile-img mx-auto">
-          <i class="bi bi-person-circle" style="font-size: 5rem; color: #0a2540;"></i>
-        </div>
-        <p class="mt-3 fst-italic text-secondary">Patrick Williams – Estate Planner</p>
-      </div>
-      <div class="col-md-7">
-        <h2 class="section-title fs-1 fw-bold">About Patrick</h2>
-        <p class="fs-5">I started Patrick D Williams Estate Planners because I saw too many families left with uncertainty and unnecessary stress after a loved one passed away. I wanted to make estate planning straightforward, affordable, and human.</p>
-        <p>With over 20 years of experience in accountancy and financial planning, I understand the importance of getting the details right. But more than that, I know that talking about Wills and Powers of Attorney isn&#39;t easy. I take time to listen, explain everything in plain English, and make sure you feel confident about the decisions you make.</p>
-        <p><strong>I cover London, Birmingham, Nottingham, Manchester, Bristol, and Leeds – and I offer home visits if that&#39;s easier for you.</strong></p>
-        <a href="#contact" class="btn btn-gold rounded-pill px-4 mt-2"><i class="bi bi-person-plus me-2"></i>Let&#39;s have a chat</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- =============================================
-     SERVICES – with clear prices
-     ============================================= -->
-<section id="services" class="py-5 bg-light">
+<!-- SERVICES PREVIEW CARDS -->
+<section class="py-5 bg-light">
   <div class="container">
     <div class="text-center mb-5">
-      <h2 class="section-title fs-1 fw-bold">Our Services</h2>
-      <p class="text-secondary">Straightforward services with fixed fees – no surprises.</p>
+      <h2 class="section-title fs-1 fw-bold" style="display:inline-block;">Our Services</h2>
+      <p class="text-secondary">Expert estate planning tailored to your family's needs.</p>
     </div>
     <div class="row g-4">
       <div class="col-md-6 col-lg-3">
-        <div class="card-hover card p-4 h-100 shadow-sm rounded-4">
-          <div class="card-body text-center">
-            <i class="bi bi-file-earmark-text service-icon"></i>
-            <h4 class="fw-bold mt-3">Will Writing</h4>
-            <p>A professionally drafted Will that clearly sets out your wishes. Includes advice on guardians for children and inheritance tax planning.</p>
-            <p class="fw-bold text-navy">£295 + VAT (single) <br>£495 + VAT (mirror Wills for couples)</p>
+        <a href="will-writing.html" class="text-decoration-none text-dark">
+          <div class="service-card card-hover card h-100 shadow-sm">
+            <img src="images/willwriting.png" alt="Will Writing" class="service-card-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect width=%22300%22 height=%22200%22 fill=%22%23f5f0e8%22/%3E%3Ctext x=%22150%22 y=%22110%22 font-family=%22Playfair Display,serif%22 font-size=%2224%22 fill=%22%23d4af37%22 text-anchor=%22middle%22%3EWill Writing%3C/text%3E%3C/svg%3E'">
+            <div class="card-body text-center">
+              <h5 class="fw-bold">Will Writing</h5>
+              <p class="small text-muted">The definitive statement of your intentions</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="col-md-6 col-lg-3">
-        <div class="card-hover card p-4 h-100 shadow-sm rounded-4">
-          <div class="card-body text-center">
-            <i class="bi bi-person-arms-up service-icon"></i>
-            <h4 class="fw-bold mt-3">Lasting Power of Attorney</h4>
-            <p>Health &amp; welfare and property &amp; financial affairs LPAs. We handle the registration with the Office of the Public Guardian.</p>
-            <p class="fw-bold text-navy">£395 + VAT (single LPA) <br>£695 + VAT (both LPAs)</p>
+        <a href="lasting-powers-of-attorney.html" class="text-decoration-none text-dark">
+          <div class="service-card card-hover card h-100 shadow-sm">
+            <img src="images/LastingPowersofAttorney.png" alt="Lasting Powers of Attorney" class="service-card-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect width=%22300%22 height=%22200%22 fill=%22%23f5f0e8%22/%3E%3Ctext x=%22150%22 y=%22110%22 font-family=%22Playfair Display,serif%22 font-size=%2220%22 fill=%22%23d4af37%22 text-anchor=%22middle%22%3ELasting Powers%3C/text%3E%3Ctext x=%22150%22 y=%22140%22 font-family=%22Playfair Display,serif%22 font-size=%2220%22 fill=%22%23d4af37%22 text-anchor=%22middle%22%3Eof Attorney%3C/text%3E%3C/svg%3E'">
+            <div class="card-body text-center">
+              <h5 class="fw-bold">Lasting Powers of Attorney</h5>
+              <p class="small text-muted">The voice during life</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="col-md-6 col-lg-3">
-        <div class="card-hover card p-4 h-100 shadow-sm rounded-4">
-          <div class="card-body text-center">
-            <i class="bi bi-shield-lock service-icon"></i>
-            <h4 class="fw-bold mt-3">Trusts &amp; Asset Protection</h4>
-            <p>Trusts to protect your home, savings and investments from care fees and inheritance tax. Bespoke advice tailored to your situation.</p>
-            <p class="fw-bold text-navy">From £795 + VAT (depending on complexity)</p>
+        <a href="property-protection-trust.html" class="text-decoration-none text-dark">
+          <div class="service-card card-hover card h-100 shadow-sm">
+            <img src="images/PropertyProtectionTrust.png" alt="Property Protection Trust" class="service-card-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect width=%22300%22 height=%22200%22 fill=%22%23f5f0e8%22/%3E%3Ctext x=%22150%22 y=%22110%22 font-family=%22Playfair Display,serif%22 font-size=%2220%22 fill=%22%23d4af37%22 text-anchor=%22middle%22%3EProperty Protection%3C/text%3E%3Ctext x=%22150%22 y=%22140%22 font-family=%22Playfair Display,serif%22 font-size=%2220%22 fill=%22%23d4af37%22 text-anchor=%22middle%22%3ETrust%3C/text%3E%3C/svg%3E'">
+            <div class="card-body text-center">
+              <h5 class="fw-bold">Property Protection Trust</h5>
+              <p class="small text-muted">The shield</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="col-md-6 col-lg-3">
-        <div class="card-hover card p-4 h-100 shadow-sm rounded-4">
-          <div class="card-body text-center">
-            <i class="bi bi-archive service-icon"></i>
-            <h4 class="fw-bold mt-3">Executor Service</h4>
-            <p>We can act as professional executor of your Will, taking the burden off your family during a difficult time. Includes full estate administration.</p>
-            <p class="fw-bold text-navy">From £1,200 + VAT (depending on estate size)</p>
+        <a href="discretionary-trust.html" class="text-decoration-none text-dark">
+          <div class="service-card card-hover card h-100 shadow-sm">
+            <img src="images/DiscretionaryTrust.png" alt="Discretionary Trust" class="service-card-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect width=%22300%22 height=%22200%22 fill=%22%23f5f0e8%22/%3E%3Ctext x=%22150%22 y=%22110%22 font-family=%22Playfair Display,serif%22 font-size=%2220%22 fill=%22%23d4af37%22 text-anchor=%22middle%22%3EDiscretionary%3C/text%3E%3Ctext x=%22150%22 y=%22140%22 font-family=%22Playfair Display,serif%22 font-size=%2220%22 fill=%22%23d4af37%22 text-anchor=%22middle%22%3ETrust%3C/text%3E%3C/svg%3E'">
+            <div class="card-body text-center">
+              <h5 class="fw-bold">Discretionary Trust</h5>
+              <p class="small text-muted">The control centre</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
-    </div>
-    <div class="text-center mt-4">
-      <p class="text-secondary"><i class="bi bi-info-circle me-1"></i> All fees include initial consultation, drafting, and final signing. Home visits available at no extra cost.</p>
+      <div class="col-md-6 col-lg-3">
+        <a href="bare-trust.html" class="text-decoration-none text-dark">
+          <div class="service-card card-hover card h-100 shadow-sm">
+            <img src="images/BareTrust.png" alt="Bare Trust" class="service-card-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect width=%22300%22 height=%22200%22 fill=%22%23f5f0e8%22/%3E%3Ctext x=%22150%22 y=%22110%22 font-family=%22Playfair Display,serif%22 font-size=%2224%22 fill=%22%23d4af37%22 text-anchor=%22middle%22%3EBare Trust%3C/text%3E%3C/svg%3E'">
+            <div class="card-body text-center">
+              <h5 class="fw-bold">Bare Trust</h5>
+              <p class="small text-muted">The direct path</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <a href="joint-tenancy-severance.html" class="text-decoration-none text-dark">
+          <div class="service-card card-hover card h-100 shadow-sm">
+            <img src="images/JointTenancySeverance.png" alt="Joint Tenancy Severance" class="service-card-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect width=%22300%22 height=%22200%22 fill=%22%23f5f0e8%22/%3E%3Ctext x=%22150%22 y=%22105%22 font-family=%22Playfair Display,serif%22 font-size=%2218%22 fill=%22%23d4af37%22 text-anchor=%22middle%22%3EJoint Tenancy%3C/text%3E%3Ctext x=%22150%22 y=%22135%22 font-family=%22Playfair Display,serif%22 font-size=%2218%22 fill=%22%23d4af37%22 text-anchor=%22middle%22%3ESeverance%3C/text%3E%3C/svg%3E'">
+            <div class="card-body text-center">
+              <h5 class="fw-bold">Joint Tenancy Severance</h5>
+              <p class="small text-muted">The structural pivot</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <a href="executor-package.html" class="text-decoration-none text-dark">
+          <div class="service-card card-hover card h-100 shadow-sm">
+            <img src="images/ExecutorPackage.png" alt="Executor Package" class="service-card-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect width=%22300%22 height=%22200%22 fill=%22%23f5f0e8%22/%3E%3Ctext x=%22150%22 y=%22110%22 font-family=%22Playfair Display,serif%22 font-size=%2220%22 fill=%22%23d4af37%22 text-anchor=%22middle%22%3EExecutor Package%3C/text%3E%3C/svg%3E'">
+            <div class="card-body text-center">
+              <h5 class="fw-bold">Executor Package</h5>
+              <p class="small text-muted">The complete brief</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <a href="about.html" class="text-decoration-none text-dark">
+          <div class="service-card card-hover card h-100 shadow-sm">
+            <img src="images/P-Williams.jpg" alt="Patrick Williams" class="service-card-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect width=%22300%22 height=%22200%22 fill=%22%23f5f0e8%22/%3E%3Ctext x=%22150%22 y=%22110%22 font-family=%22Playfair Display,serif%22 font-size=%2220%22 fill=%22%23d4af37%22 text-anchor=%22middle%22%3EMeet Patrick%3C/text%3E%3C/svg%3E'">
+            <div class="card-body text-center">
+              <h5 class="fw-bold">About Patrick</h5>
+              <p class="small text-muted">Your trusted estate planner</p>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- =============================================
-     PRICING – full price list
-     ============================================= -->
-<section id="pricing" class="py-5 bg-white">
+<!-- BOTTOM NAVBAR -->
+<div class="bottom-navbar">
   <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="section-title fs-1 fw-bold">Our Fees</h2>
-      <p class="text-secondary">No hidden costs – what you see is what you pay.</p>
-    </div>
-    <div class="row g-4 justify-content-center">
-      <div class="col-md-6 col-lg-4">
-        <div class="price-box h-100">
-          <h4 class="fw-bold">Single Will</h4>
-          <p class="display-6 fw-bold text-navy">£295</p>
-          <p class="text-secondary">+ VAT</p>
-          <ul class="list-unstyled">
-            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Full consultation</li>
-            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Drafting &amp; signing</li>
-            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Storage advice</li>
-          </ul>
-        </div>
+    <div class="row text-center text-md-start align-items-center">
+      <div class="col-md-8">
+        <a href="index.html"><i class="bi bi-house"></i> Home</a>
+        <a href="about.html"><i class="bi bi-person"></i> About</a>
+        <a href="#"><i class="bi bi-grid"></i> Services</a>
+        <a href="pricing.html"><i class="bi bi-tag"></i> Pricing</a>
+        <a href="contact.html"><i class="bi bi-envelope"></i> Contact</a>
       </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="price-box h-100 border-gold" style="border-left-color: #d4af37; border-width: 4px;">
-          <h4 class="fw-bold">Mirror Wills (couple)</h4>
-          <p class="display-6 fw-bold text-navy">£495</p>
-          <p class="text-secondary">+ VAT</p>
-          <ul class="list-unstyled">
-            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Two matching Wills</li>
-            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Joint consultation</li>
-            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Inheritance tax planning</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="price-box h-100">
-          <h4 class="fw-bold">Lasting Power of Attorney</h4>
-          <p class="display-6 fw-bold text-navy">£395</p>
-          <p class="text-secondary">per LPA (+ VAT) <br>£695 for both</p>
-          <ul class="list-unstyled">
-            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> OPG registration included</li>
-            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Health &amp; welfare or financial</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="price-box h-100">
-          <h4 class="fw-bold">Trust &amp; Asset Protection</h4>
-          <p class="display-6 fw-bold text-navy">From £795</p>
-          <p class="text-secondary">+ VAT</p>
-          <ul class="list-unstyled">
-            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Bespoke trust drafting</li>
-            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Care fee protection advice</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="price-box h-100">
-          <h4 class="fw-bold">Executor Service</h4>
-          <p class="display-6 fw-bold text-navy">From £1,200</p>
-          <p class="text-secondary">+ VAT</p>
-          <ul class="list-unstyled">
-            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Professional executor</li>
-            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Full estate administration</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="price-box h-100 bg-soft-gold">
-          <h4 class="fw-bold">Free 15-min Call</h4>
-          <p class="display-6 fw-bold text-navy">£0</p>
-          <p class="text-secondary">No obligation</p>
-          <ul class="list-unstyled">
-            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Ask any questions</li>
-            <li><i class="bi bi-check me-2" style="color:#d4af37;"></i> Get a feel for how we work</li>
-          </ul>
-          <a href="#contact" class="btn btn-gold rounded-pill mt-2 w-100">Book now</a>
-        </div>
-      </div>
-    </div>
-    <p class="text-center text-secondary mt-4"><i class="bi bi-credit-card me-1"></i> Payment by bank transfer or card. Home visits available across London, Birmingham, Nottingham, Manchester, Bristol, and Leeds.</p>
-  </div>
-</section>
-
-<!-- =============================================
-     CONTACT – with Calendly link, phone, email
-     ============================================= -->
-<section id="contact" class="py-5 bg-navy text-white">
-  <div class="container">
-    <div class="row g-5 align-items-center">
-      <div class="col-lg-6">
-        <h2 class="display-4 fw-bold">Let&#39;s talk about your future</h2>
-        <p class="lead mt-3 opacity-75">A free 15-minute phone call – no pressure, just honest advice. We&#39;ll work out what you need and how we can help.</p>
-        <div class="mt-4 d-flex flex-column gap-3">
-          <div><i class="bi bi-telephone-fill me-3 fs-5" style="color:#d4af37;"></i> <strong>0743 260 4830</strong></div>
-          <div><i class="bi bi-envelope-fill me-3 fs-5" style="color:#d4af37;"></i> info@patrickdwilliamsestateplanner.com</div>
-          <div><i class="bi bi-geo-alt-fill me-3 fs-5" style="color:#d4af37;"></i> London, Birmingham, Nottingham, Manchester, Bristol, and Leeds</div>
-        </div>
-        <div class="mt-4">
-          <a href="https://calendly.com/patrickwilliams" target="_blank" class="btn btn-gold rounded-pill px-5 py-3 fs-5"><i class="bi bi-calendar-check me-2"></i>Book a free 15-min call</a>
-        </div>
-        <p class="mt-3 small opacity-75">Or call us directly – we&#39;re here Monday–Friday, 9am–6pm.</p>
-      </div>
-      <div class="col-lg-6">
-        <div class="bg-white text-dark p-4 rounded-4 shadow">
-          <h4 class="fw-bold mb-3">Send a message</h4>
-          <form id="contactForm" action="https://formsubmit.co/info@patrickdwilliamsestateplanner.com" method="POST" onsubmit="return validateBot(event)">
-            <input type="text" name="_honey" style="display:none">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_subject" value="New enquiry from Estate Planners website">
-            <div class="mb-3"><input type="text" class="form-control" name="name" placeholder="Your name" required></div>
-            <div class="mb-3"><input type="email" class="form-control" name="email" placeholder="Email address" required></div>
-            <div class="mb-3"><input type="tel" class="form-control" name="phone" placeholder="Phone number"></div>
-            <div class="mb-3"><textarea class="form-control" name="message" rows="3" placeholder="Tell me about your situation..." required></textarea></div>
-            <button type="submit" class="btn btn-gold w-100 rounded-pill py-2 fw-semibold">Send message <i class="bi bi-send"></i></button>
-            <div id="formFeedback" class="mt-3 small text-center text-dark"></div>
-          </form>
-        </div>
+      <div class="col-md-4 text-md-end mt-2 mt-md-0">
+        <span class="text-white-50 small"><i class="bi bi-telephone me-1"></i> 0743 260 4830</span>
       </div>
     </div>
   </div>
-</section>
+</div>
 
-<!-- =============================================
-     FOOTER – sitemap link, areas served
-     ============================================= -->
+<!-- FOOTER -->
 <footer class="py-4 bg-white border-top">
   <div class="container">
     <div class="row g-3">
@@ -416,88 +404,16 @@
         <span class="text-muted">Protecting families across London, Birmingham, Nottingham, Manchester, Bristol, and Leeds.</span></p>
       </div>
       <div class="col-md-6 text-md-end">
-        <a href="/sitemap.xml" class="text-secondary text-decoration-none small me-3">Sitemap</a>
+        <a href="sitemap.xml" class="text-secondary text-decoration-none small me-3">Sitemap</a>
         <a href="#home" class="text-secondary text-decoration-none small">Back to top <i class="bi bi-arrow-up"></i></a>
       </div>
+    </div>
+    <div class="text-center mt-3 pt-2 border-top">
+      <span class="small text-muted">Designed by <a href="http://217.154.38.190/" target="_blank" class="text-decoration-none text-navy fw-semibold">BIS Smart Digital Solutions</a></span>
     </div>
   </div>
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
-<script>
-  // =============================================
-  // NAVIGATION ACTIVE STATE
-  // =============================================
-  const navLinks = document.querySelectorAll('.nav-link-custom');
-  const sections = ['home','about','services','pricing','contact'];
-  navLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-      navLinks.forEach(l => l.classList.remove('active-link'));
-      this.classList.add('active-link');
-      const id = this.getAttribute('href');
-      if (id && id !== "#") {
-        e.preventDefault();
-        document.querySelector(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    });
-  });
-  window.addEventListener('scroll', () => {
-    let current = '';
-    for (let s of sections) {
-      const el = document.getElementById(s);
-      if (el) {
-        const rect = el.getBoundingClientRect();
-        if (rect.top <= 150 && rect.bottom >= 80) { current = s; break; }
-      }
-    }
-    navLinks.forEach(link => {
-      link.classList.remove('active-link');
-      if (link.getAttribute('href')?.substring(1) === current) link.classList.add('active-link');
-    });
-  });
-
-  // =============================================
-  // BOT DETECTION (honeypot)
-  // =============================================
-  function validateBot(e) {
-    const honey = document.querySelector('input[name="_honey"]');
-    if (honey && honey.value !== "") {
-      e.preventDefault();
-      document.getElementById('formFeedback').innerHTML = '<div class="alert alert-danger">Bot detected. Submission blocked.</div>';
-      return false;
-    }
-    return true;
-  }
-  const contactForm = document.getElementById('contactForm');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-      if (!validateBot(e)) e.preventDefault();
-    });
-  }
-
-  // =============================================
-  // SITEMAP GENERATOR (simple static)
-  // =============================================
-  // This is a placeholder – you'll need to host an actual sitemap.xml.
-  // For now, we'll just show a console log.
-  console.log('Sitemap available at /sitemap.xml (static file)');
-</script>
-
-<!-- =============================================
-     STATIC SITEMAP.XML (inline – but should be a separate file)
-     ============================================= -->
-<!--
-  For production, create a file named sitemap.xml in the root folder with:
-  <?xml version="1.0" encoding="UTF-8"?>
-  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url><loc>https://patrickwilliamsestateplanners.co.uk/</loc><priority>1.0</priority></url>
-    <url><loc>https://patrickwilliamsestateplanners.co.uk/#about</loc></url>
-    <url><loc>https://patrickwilliamsestateplanners.co.uk/#services</loc></url>
-    <url><loc>https://patrickwilliamsestateplanners.co.uk/#pricing</loc></url>
-    <url><loc>https://patrickwilliamsestateplanners.co.uk/#contact</loc></url>
-  </urlset>
--->
 </body>
 </html>

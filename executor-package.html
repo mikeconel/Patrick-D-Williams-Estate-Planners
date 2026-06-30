@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Executor Package | Patrick D Williams Estate Planners</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #faf8f5; color: #1e2b37; }
+    h1, h2, h3, h4, .font-serif { font-family: 'Playfair Display', serif; }
+    .bg-navy { background: #0a2540; }
+    .text-navy { color: #0a2540; }
+    .btn-gold { background: #d4af37; color: #0a2540; font-weight: 600; border: none; transition: all 0.3s ease; }
+    .btn-gold:hover { background: #c2a12e; transform: translateY(-2px); color: #0a2540; }
+    .btn-outline-navy { border: 1.5px solid #0a2540; color: #0a2540; background: transparent; font-weight: 500; transition: 0.3s; }
+    .btn-outline-navy:hover { background: #0a2540; color: white; }
+    .section-title { position: relative; display: inline-block; margin-bottom: 2rem; font-weight: 700; }
+    .section-title:after { content: ''; position: absolute; bottom: -12px; left: 0; width: 60px; height: 3px; background: #d4af37; }
+    .phone-header { font-weight: 600; font-size: 1.1rem; color: #0a2540; text-decoration: none; }
+    .phone-header i { color: #d4af37; margin-right: 6px; }
+    .navbar-brand { font-family: 'Playfair Display', serif; font-weight: 700; }
+    .nav-link-custom { color: #0a2540; font-weight: 500; transition: 0.2s; padding: 0.5rem 1rem; border-radius: 30px; }
+    .nav-link-custom:hover { color: #d4af37 !important; background: rgba(212,175,55,0.05); }
+    .nav-link-custom.active-link { color: #b38f2a !important; background: rgba(212,175,55,0.1); font-weight: 600; }
+    .dropdown-menu-custom { border: none; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.08); padding: 0.5rem; background: white; }
+    .dropdown-menu-custom .dropdown-item { border-radius: 12px; padding: 0.6rem 1.2rem; font-weight: 500; transition: 0.2s; }
+    .dropdown-menu-custom .dropdown-item:hover { background: #fdf6e8; color: #d4af37; }
+    .bottom-navbar { background: #0a2540; padding: 1rem 0; border-top: 2px solid #d4af37; }
+    .bottom-navbar a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.85rem; transition: 0.2s; padding: 0.3rem 0.8rem; }
+    .bottom-navbar a:hover { color: #d4af37; }
+    .bottom-navbar .bi { margin-right: 4px; }
+    .service-hero-img { width: 100%; height: 400px; object-fit: cover; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.06); }
+    @media (max-width: 768px) { .service-hero-img { height: 180px; } }
+    .header-phone { font-size: 1.2rem; font-weight: 600; color: #0a2540; }
+    .header-phone i { color: #d4af37; margin-right: 8px; }
+    @media (max-width: 768px) { .header-phone { font-size: 1rem; } }
+  </style>
+</head>
+<body>
+
+<header class="bg-white border-bottom py-2">
+  <div class="container d-flex justify-content-between align-items-center">
+    <span class="fw-bold text-navy"><i class="bi bi-telephone-fill me-1" style="color:#d4af37;"></i> <a href="tel:07432604830" class="text-navy text-decoration-none header-phone">0743 260 4830</a></span>
+    <span class="small text-secondary d-none d-sm-inline">Free 15-min consultation</span>
+  </div>
+</header>
+
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-2">
+  <div class="container">
+    <a class="navbar-brand fs-3" href="index.html">Patrick D Williams <span style="color:#d4af37;">Estate Planners</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-1">
+        <li class="nav-item"><a class="nav-link-custom" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link-custom" href="about.html">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link-custom dropdown-toggle active-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu dropdown-menu-custom">
+            <li><a class="dropdown-item" href="will-writing.html">Will Writing</a></li>
+            <li><a class="dropdown-item" href="lasting-powers-of-attorney.html">Lasting Powers of Attorney</a></li>
+            <li><a class="dropdown-item" href="property-protection-trust.html">Property Protection Trust</a></li>
+            <li><a class="dropdown-item" href="discretionary-trust.html">Discretionary Trust</a></li>
+            <li><a class="dropdown-item" href="bare-trust.html">Bare Trust</a></li>
+            <li><a class="dropdown-item" href="joint-tenancy-severance.html">Joint Tenancy Severance</a></li>
+            <li><a class="dropdown-item active" href="executor-package.html">Executor Package</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link-custom" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link-custom" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6">
+        <p class="font-body text-xs uppercase tracking-[0.25em] text-accent" style="color:#d4af37; font-weight:600;">The Complete Brief</p>
+        <h1 class="display-4 fw-bold">Executor Package</h1>
+        <div class="w-16 h-px bg-accent mb-4" style="width:60px; height:2px; background:#d4af37;"></div>
+        <p class="lead">Administering an estate can be burdensome and confusing. Our Executor Package provides your appointed executor with everything they need to navigate probate efficiently — reducing delay, anxiety, and professional costs.</p>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/ExecutorPackage.png" alt="Executor Package" class="service-hero-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22300%22%3E%3Crect width=%22800%22 height=%22300%22 fill=%22%23f5f0e8%22/%3E%3Ctext x=%22400%22 y=%22150%22 font-family=%22Playfair Display,serif%22 font-size=%2232%22 fill=%22%23d4af37%22 text-anchor=%22middle%22%3EExecutor Package%3C/text%3E%3C/svg%3E'">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-md-7">
+        <h2 class="section-title fs-2 fw-bold">Why an Executor Package Matters</h2>
+        <p>Acting as an executor is a significant responsibility — and one most people undertake without any prior experience. The average probate process takes 9–12 months, and executors who are unprepared face unnecessary delays, mounting costs, and the risk of personal liability for errors.</p>
+        <p>Our Executor Package is designed to be handed to your executor on your death — a complete operational manual that transforms a complex legal process into a structured, manageable workflow. Your executor will know exactly what to do, who to contact, and how to do it.</p>
+        <p>By preparing this package as part of your estate planning, you reduce the emotional and practical burden on the person you have chosen to administer your estate — allowing them to focus on the task rather than learning it from scratch.</p>
+      </div>
+      <div class="col-md-5">
+        <div class="p-4 bg-white rounded-4 shadow-sm h-100 border-start border-4 border-danger">
+          <h4 class="fw-bold mb-3 text-navy">The Executor's Burden Without Preparation:</h4>
+          <ul class="list-unstyled mt-3">
+            <li class="mb-2"><i class="bi bi-dash me-2" style="color:#d4af37;"></i>Locating the original Will and understanding its terms</li>
+            <li class="mb-2"><i class="bi bi-dash me-2" style="color:#d4af37;"></i>Identifying every asset and liability across multiple institutions</li>
+            <li class="mb-2"><i class="bi bi-dash me-2" style="color:#d4af37;"></i>Navigating HMRC forms and inheritance tax calculations</li>
+            <li class="mb-2"><i class="bi bi-dash me-2" style="color:#d4af37;"></i>Applying for the Grant of Probate without legal training</li>
+            <li class="mb-2"><i class="bi bi-dash me-2" style="color:#d4af37;"></i>Managing family expectations and beneficiary communications</li>
+            <li class="mb-0"><i class="bi bi-dash me-2" style="color:#d4af37;"></i>Producing estate accounts for final distribution</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title fs-2 fw-bold text-center w-100 mb-5">What's Inside the Package</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4">
+        <div class="p-3 border rounded-3 h-100 bg-white shadow-sm">
+          <h5 class="fw-bold text-navy">Part I - The Executor's Brief</h5>
+          <p class="text-muted small">Your role, your duties, and your legal obligations explained in plain English. What the Grant of Probate is and why you need it.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-3 border rounded-3 h-100 bg-white shadow-sm">
+          <h5 class="fw-bold text-navy">Part II - Asset & Liability Ledger</h5>
+          <p class="text-muted small">Every asset and liability of the estate catalogued, valued, and cross-referenced to the relevant institution with account numbers.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-3 border rounded-3 h-100 bg-white shadow-sm">
+          <h5 class="fw-bold text-navy">Part III - The Probate Timeline</h5>
+          <p class="text-muted small">A chronological roadmap from the date of death to the final distribution — with estimated durations for each stage.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-3 border rounded-3 h-100 bg-white shadow-sm">
+          <h5 class="fw-bold text-navy">Part IV - Correspondence Templates</h5>
+          <p class="text-muted small">Pre-drafted letters addressing banks, insurers, HMRC, DWP, pension providers, and utility companies — ready to print and send.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-3 border rounded-3 h-100 bg-white shadow-sm">
+          <h5 class="fw-bold text-navy">Part V - IHT Computation</h5>
+          <p class="text-muted small">The inheritance tax calculation with reference to all available reliefs, exemptions, and nil-rate bands relevant to the estate.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-3 border rounded-3 h-100 bg-white shadow-sm">
+          <h5 class="fw-bold text-navy">Part VI - Beneficiary Communication</h5>
+          <p class="text-muted small">Guidance on keeping beneficiaries informed — including template updates at key milestones in the administration process.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-3 border rounded-3 h-100 bg-white shadow-sm">
+          <h5 class="fw-bold text-navy">Part VII - Final Accounts & Distribution</h5>
+          <p class="text-muted small">A framework for preparing the estate accounts and effecting the final distribution in accordance with the Will.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title fs-2 fw-bold">The Benefits</h2>
+    <div class="row g-4 mt-3">
+      <div class="col-md-6">
+        <div class="d-flex gap-3 mb-4">
+          <span class="display-6 fw-bold" style="color:#d4af37; opacity:0.5;">01</span>
+          <div><h4 class="fw-bold">Complete Asset & Liability Register</h4><p class="text-muted">A comprehensive schedule of all known assets — property, bank accounts, investments, pensions, life policies, and personal possessions — together with an inventory of liabilities. The executor knows exactly what the estate comprises from day one.</p></div>
+        </div>
+        <div class="d-flex gap-3 mb-4">
+          <span class="display-6 fw-bold" style="color:#d4af37; opacity:0.5;">02</span>
+          <div><h4 class="fw-bold">Institution & Point-of-Contact Directory</h4><p class="text-muted">Every bank, building society, investment platform, utility provider, insurer, and professional adviser listed with account references and contact details — eliminating the executor's need to search through decades of paperwork.</p></div>
+        </div>
+        <div class="d-flex gap-3 mb-4">
+          <span class="display-6 fw-bold" style="color:#d4af37; opacity:0.5;">03</span>
+          <div><h4 class="fw-bold">Step-by-Step Probate Roadmap</h4><p class="text-muted">A plain-English timeline of the probate process: registering the death, valuing the estate, completing the IHT return, applying for the Grant of Probate, collecting in assets, settling liabilities, and distributing to beneficiaries.</p></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex gap-3 mb-4">
+          <span class="display-6 fw-bold" style="color:#d4af37; opacity:0.5;">04</span>
+          <div><h4 class="fw-bold">Prepared Documentation Suite</h4><p class="text-muted">Template letters for notifying financial institutions, utility companies, HMRC, and the Department for Work and Pensions — together with the PA1P probate application form pre-populated with the estate's known particulars.</p></div>
+        </div>
+        <div class="d-flex gap-3">
+          <span class="display-6 fw-bold" style="color:#d4af37; opacity:0.5;">05</span>
+          <div><h4 class="fw-bold">Inheritance Tax Guidance</h4><p class="text-muted">A clear explanation of the IHT thresholds, reliefs, and exemptions relevant to your estate — including the residence nil-rate band, charitable exemptions, and business property relief — with guidance on completing form IHT205 or IHT400.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title fs-2 fw-bold">Our Process</h2>
+    <div class="row g-4 mt-3">
+      <div class="col-md-3">
+        <div class="border-top border-3 pt-3" style="border-color:#d4af37 !important;">
+          <span class="display-6 fw-bold" style="color:#d4af37; opacity:0.3;">I</span>
+          <h4 class="fw-bold mt-2">Estate Mapping Session</h4>
+          <p class="text-muted">We meet with you to catalogue every asset, liability, policy, and institution relevant to your estate.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="border-top border-3 pt-3" style="border-color:#d4af37 !important;">
+          <span class="display-6 fw-bold" style="color:#d4af37; opacity:0.3;">II</span>
+          <h4 class="fw-bold mt-2">Document Assembly</h4>
+          <p class="text-muted">We compile the Package — ledgers, templates, roadmaps, and IHT guidance — tailored precisely to your estate.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="border-top border-3 pt-3" style="border-color:#d4af37 !important;">
+          <span class="display-6 fw-bold" style="color:#d4af37; opacity:0.3;">III</span>
+          <h4 class="fw-bold mt-2">Executor Briefing</h4>
+          <p class="text-muted">We offer an optional briefing session with your executor to walk them through the Package and answer their questions.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="border-top border-3 pt-3" style="border-color:#d4af37 !important;">
+          <span class="display-6 fw-bold" style="color:#d4af37; opacity:0.3;">IV</span>
+          <h4 class="fw-bold mt-2">Secure Storage</h4>
+          <p class="text-muted">Your original Will and Executor Package are stored in our document vault, with clear instructions for release upon death.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-navy text-white">
+  <div class="container text-center">
+    <h2 class="display-5 fw-bold">Secure Your Family's Future</h2>
+    <p class="lead opacity-75 mb-4">Relieve your executor's burden before they even begin.</p>
+    <a href="contact.html" class="btn btn-gold rounded-pill px-5 py-3 fs-5"><i class="bi bi-envelope-paper me-2"></i>Enquire about the Package</a>
+  </div>
+</section>
+
+<div class="bottom-navbar">
+  <div class="container">
+    <div class="row text-center text-md-start align-items-center">
+      <div class="col-md-8">
+        <a href="index.html"><i class="bi bi-house"></i> Home</a>
+        <a href="about.html"><i class="bi bi-person"></i> About</a>
+        <a href="#"><i class="bi bi-grid"></i> Services</a>
+        <a href="pricing.html"><i class="bi bi-tag"></i> Pricing</a>
+        <a href="contact.html"><i class="bi bi-envelope"></i> Contact</a>
+      </div>
+      <div class="col-md-4 text-md-end mt-2 mt-md-0">
+        <span class="text-white-50 small"><i class="bi bi-telephone me-1"></i> 0743 260 4830</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="py-4 bg-white border-top">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-md-6">
+        <p class="mb-0 small text-secondary">© 2026 Patrick D Williams Estate Planners. All rights reserved.<br><span class="text-muted">Protecting families across London, Birmingham, Nottingham, Manchester, Bristol, and Leeds.</span></p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <a href="sitemap.xml" class="text-secondary text-decoration-none small me-3">Sitemap</a>
+        <a href="#" class="text-secondary text-decoration-none small">Back to top <i class="bi bi-arrow-up"></i></a>
+      </div>
+    </div>
+    <div class="text-center mt-3 pt-2 border-top">
+      <span class="small text-muted">Designed by <a href="http://217.154.38.190/" target="_blank" class="text-decoration-none text-navy fw-semibold">BIS Smart Digital Solutions</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

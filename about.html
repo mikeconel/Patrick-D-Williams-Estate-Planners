@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Patrick | Patrick D Williams Estate Planners</title>
+  <meta name="description" content="Meet Patrick Williams – Chartered Financial Adviser and Estate Planning Specialist with over 20 years of experience." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #faf8f5; color: #1e2b37; }
+    h1, h2, h3, h4, .font-serif { font-family: 'Playfair Display', serif; }
+    .bg-navy { background: #0a2540; }
+    .text-navy { color: #0a2540; }
+    .btn-gold { background: #d4af37; color: #0a2540; font-weight: 600; border: none; transition: all 0.3s ease; }
+    .btn-gold:hover { background: #c2a12e; transform: translateY(-2px); color: #0a2540; }
+    .btn-outline-navy { border: 1.5px solid #0a2540; color: #0a2540; background: transparent; font-weight: 500; transition: 0.3s; }
+    .btn-outline-navy:hover { background: #0a2540; color: white; }
+    .section-title { position: relative; display: inline-block; margin-bottom: 2rem; font-weight: 700; }
+    .section-title:after { content: ''; position: absolute; bottom: -12px; left: 0; width: 60px; height: 3px; background: #d4af37; }
+    .phone-header { font-weight: 600; font-size: 1.1rem; color: #0a2540; text-decoration: none; }
+    .phone-header i { color: #d4af37; margin-right: 6px; }
+    .navbar-brand { font-family: 'Playfair Display', serif; font-weight: 700; }
+    .nav-link-custom { color: #0a2540; font-weight: 500; transition: 0.2s; padding: 0.5rem 1rem; border-radius: 30px; }
+    .nav-link-custom:hover { color: #d4af37 !important; background: rgba(212,175,55,0.05); }
+    .nav-link-custom.active-link { color: #b38f2a !important; background: rgba(212,175,55,0.1); font-weight: 600; }
+    .dropdown-menu-custom { border: none; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.08); padding: 0.5rem; background: white; }
+    .dropdown-menu-custom .dropdown-item { border-radius: 12px; padding: 0.6rem 1.2rem; font-weight: 500; transition: 0.2s; }
+    .dropdown-menu-custom .dropdown-item:hover { background: #fdf6e8; color: #d4af37; }
+    .bottom-navbar { background: #0a2540; padding: 1rem 0; border-top: 2px solid #d4af37; }
+    .bottom-navbar a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.85rem; transition: 0.2s; padding: 0.3rem 0.8rem; }
+    .bottom-navbar a:hover { color: #d4af37; }
+    .bottom-navbar .bi { margin-right: 4px; }
+    .profile-img { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+    .milestone-dot { width: 16px; height: 16px; border-radius: 50%; background: #d4af37; border: 3px solid white; box-shadow: 0 0 0 2px #d4af37; flex-shrink: 0; margin-top: 4px; }
+    .milestone-item { position: relative; padding-left: 32px; padding-bottom: 2rem; border-left: 2px solid rgba(212,175,55,0.2); }
+    .milestone-item:last-child { padding-bottom: 0; border-left: none; }
+    .milestone-item .milestone-dot { position: absolute; left: -8px; top: 4px; }
+    .header-phone { font-size: 1.2rem; font-weight: 600; color: #0a2540; }
+    .header-phone i { color: #d4af37; margin-right: 8px; }
+    @media (max-width: 768px) { .header-phone { font-size: 1rem; } }
+  </style>
+</head>
+<body>
+
+<header class="bg-white border-bottom py-2">
+  <div class="container d-flex justify-content-between align-items-center">
+    <span class="fw-bold text-navy"><i class="bi bi-telephone-fill me-1" style="color:#d4af37;"></i> <a href="tel:07432604830" class="text-navy text-decoration-none header-phone">0743 260 4830</a></span>
+    <span class="small text-secondary d-none d-sm-inline">Free 15-min consultation</span>
+  </div>
+</header>
+
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-2">
+  <div class="container">
+    <a class="navbar-brand fs-3" href="index.html">Patrick D Williams <span style="color:#d4af37;">Estate Planners</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-1">
+        <li class="nav-item"><a class="nav-link-custom" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link-custom active-link" href="about.html">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link-custom dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu dropdown-menu-custom">
+            <li><a class="dropdown-item" href="will-writing.html">Will Writing</a></li>
+            <li><a class="dropdown-item" href="lasting-powers-of-attorney.html">Lasting Powers of Attorney</a></li>
+            <li><a class="dropdown-item" href="property-protection-trust.html">Property Protection Trust</a></li>
+            <li><a class="dropdown-item" href="discretionary-trust.html">Discretionary Trust</a></li>
+            <li><a class="dropdown-item" href="bare-trust.html">Bare Trust</a></li>
+            <li><a class="dropdown-item" href="joint-tenancy-severance.html">Joint Tenancy Severance</a></li>
+            <li><a class="dropdown-item" href="executor-package.html">Executor Package</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link-custom" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link-custom" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-md-5 text-center">
+        <img src="images/P-Williams.jpg" alt="Patrick Williams" class="profile-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect width=%22200%22 height=%22200%22 fill=%22%23d4af37%22/%3E%3Ctext x=%22100%22 y=%22110%22 font-family=%22Playfair Display,serif%22 font-size=%2232%22 fill=%22white%22 text-anchor=%22middle%22%3EPW%3C/text%3E%3C/svg%3E'">
+        <p class="mt-3 fst-italic text-secondary">Patrick Williams – Estate Planner</p>
+      </div>
+      <div class="col-md-7">
+        <h2 class="section-title fs-1 fw-bold">How it started</h2>
+        <p class="fs-5">I started Patrick D Williams Estate Planners because I saw too many families left with uncertainty and unnecessary stress after a loved one passed away. I wanted to make estate planning straightforward, affordable, and human.</p>
+        <p>With over 20 years of experience in accountancy and financial planning, I understand the importance of getting the details right. But more than that, I know that talking about Wills and Powers of Attorney isn't easy. I take time to listen, explain everything in plain English, and make sure you feel confident about the decisions you make.</p>
+        <p><strong>I cover London, Birmingham, Nottingham, Manchester, Bristol, and Leeds – and I offer home visits if that's easier for you.</strong></p>
+        <a href="contact.html" class="btn btn-gold rounded-pill px-4 mt-2"><i class="bi bi-person-plus me-2"></i>Let's have a chat</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- The Journey Here -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <h2 class="section-title fs-1 fw-bold" style="display:block; text-align:center;">The Journey Here</h2>
+        <div class="mt-4 space-y-4" style="max-width:800px; margin:0 auto;">
+          <p class="font-body text-lg leading-[1.7] text-muted-foreground">My career began quietly, behind a desk in a modest office, helping small business owners make sense of their accounts. For two decades as a self-employed certified public accountant, I had the privilege of sitting across from hard-working people — entrepreneurs, tradespeople, family businesses — and helping them navigate the tax and financial landscape with confidence.</p>
+          <p class="font-body text-lg leading-[1.7] text-muted-foreground">Over time, the conversations deepened. Clients began asking questions I could not answer: about pensions, savings vehicles, investment strategies, and the mechanics of trusts. These were not abstract curiosities — they were the practical, pressing concerns of people building lives and wanting to protect them. I realised that to serve them properly, I needed to expand my own expertise.</p>
+          <p class="font-body text-lg leading-[1.7] text-muted-foreground">Returning to study while running a full-time practice was — candidly — a struggle. Years of examinations, late nights, and the humbling experience of being a student again. But the result was worth every hour: I am now a Chartered Financial Adviser, the highest standard in the profession, and a specialist estate planner who can answer those questions that once sat beyond my reach.</p>
+          <p class="font-body text-lg leading-[1.7] text-muted-foreground">Today, my practice is built on a single conviction: that your legacy — the home you worked for, the savings you accumulated, the future you envisioned for your children — deserves to be shielded from the forces that threaten it. Care home fees. Creditor claims. The financial fallout of divorce, second marriages, and blended families. These are not distant risks; they are the realities that keep people awake at night. My role is to address them, methodically and completely, so that your beneficiaries receive what you intended — not what circumstance leaves behind.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Professional Milestones -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <h2 class="section-title fs-1 fw-bold text-center mb-5" style="display:block; text-align:center;">Professional Milestones</h2>
+        <div class="position-relative" style="padding-left:10px;">
+          <div class="milestone-item">
+            <div class="milestone-dot"></div>
+            <span class="font-body text-xs uppercase tracking-[0.2em] text-accent" style="color:#d4af37; font-weight:600;">2006</span>
+            <h3 class="font-display text-lg tracking-tight text-foreground mt-1 mb-2" style="font-family:'Playfair Display',serif;">Certified Public Accountant</h3>
+            <p class="font-body text-base leading-[1.7] text-muted-foreground">Established a private practice providing financial and tax solutions to small businesses — building two decades of trusted relationships and a reputation for meticulous, clear-headed advice.</p>
+          </div>
+          <div class="milestone-item">
+            <div class="milestone-dot"></div>
+            <span class="font-body text-xs uppercase tracking-[0.2em] text-accent" style="color:#d4af37; font-weight:600;">2022</span>
+            <h3 class="font-display text-lg tracking-tight text-foreground mt-1 mb-2" style="font-family:'Playfair Display',serif;">Financial Adviser Qualification</h3>
+            <p class="font-body text-base leading-[1.7] text-muted-foreground">Responding to a growing volume of investment, pension, savings, and trust enquiries from existing clients, embarked on the rigorous journey to become a fully qualified financial adviser — passing a series of demanding examinations alongside running the practice.</p>
+          </div>
+          <div class="milestone-item">
+            <div class="milestone-dot"></div>
+            <span class="font-body text-xs uppercase tracking-[0.2em] text-accent" style="color:#d4af37; font-weight:600;">2024</span>
+            <h3 class="font-display text-lg tracking-tight text-foreground mt-1 mb-2" style="font-family:'Playfair Display',serif;">Chartered Financial Adviser</h3>
+            <p class="font-body text-base leading-[1.7] text-muted-foreground">Achieved Chartered status, the gold standard in financial advice — combining deep technical knowledge with a commitment to the highest ethical and professional standards.</p>
+          </div>
+          <div class="milestone-item">
+            <div class="milestone-dot"></div>
+            <span class="font-body text-xs uppercase tracking-[0.2em] text-accent" style="color:#d4af37; font-weight:600;">2026</span>
+            <h3 class="font-display text-lg tracking-tight text-foreground mt-1 mb-2" style="font-family:'Playfair Display',serif;">Estate Planning Specialist</h3>
+            <p class="font-body text-base leading-[1.7] text-muted-foreground">Formalised the estate planning practice to address the most pressing concerns clients face: protecting their legacy from care home costs, creditors, divorce settlements, and the complexities of second marriages and blended families.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOTTOM NAVBAR -->
+<div class="bottom-navbar">
+  <div class="container">
+    <div class="row text-center text-md-start align-items-center">
+      <div class="col-md-8">
+        <a href="index.html"><i class="bi bi-house"></i> Home</a>
+        <a href="about.html"><i class="bi bi-person"></i> About</a>
+        <a href="#"><i class="bi bi-grid"></i> Services</a>
+        <a href="pricing.html"><i class="bi bi-tag"></i> Pricing</a>
+        <a href="contact.html"><i class="bi bi-envelope"></i> Contact</a>
+      </div>
+      <div class="col-md-4 text-md-end mt-2 mt-md-0">
+        <span class="text-white-50 small"><i class="bi bi-telephone me-1"></i> 0743 260 4830</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="py-4 bg-white border-top">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-md-6">
+        <p class="mb-0 small text-secondary">© 2026 Patrick D Williams Estate Planners. All rights reserved.<br><span class="text-muted">Protecting families across London, Birmingham, Nottingham, Manchester, Bristol, and Leeds.</span></p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <a href="sitemap.xml" class="text-secondary text-decoration-none small me-3">Sitemap</a>
+        <a href="#" class="text-secondary text-decoration-none small">Back to top <i class="bi bi-arrow-up"></i></a>
+      </div>
+    </div>
+    <div class="text-center mt-3 pt-2 border-top">
+      <span class="small text-muted">Designed by <a href="http://217.154.38.190/" target="_blank" class="text-decoration-none text-navy fw-semibold">BIS Smart Digital Solutions</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
